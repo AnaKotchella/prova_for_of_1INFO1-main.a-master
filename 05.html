@@ -1,0 +1,23 @@
+<script>
+    /*
+    Filtrando Cidades da Lista
+Considere a seguinte lista de cidades: ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"].
+Peça para o usuário para digitar uma letra. 
+Usando for...of, crie um novo array contendo apenas as cidades da lista original que começam com a letra informada pelo usuário.
+Ao final, exiba o novo array com as cidades que atenderam a condição estabelecida.
+    */
+   //Primeiro passo: variaveis
+   const letra = prompt("informe uma nova letra");
+   let lista = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
+   //segundo passo: variavel de armazenamento
+   
+   let lista2 = [];
+    //terceiro passo: for...of
+   for(let palavra of lista){
+    if(palavra.charAt() == letra)
+    lista2.push(palavra)
+   }
+   //quarto passo: mensagem final
+   alert(`sua cidade é ${lista2}`);
+
+</script>

@@ -1,0 +1,27 @@
+<script>
+    /*
+    Somar Números Ímpares
+Dado o Array [33, 5, 88, 12, 91, 25], peça para o usuário inserir um novo número no Array.
+Depois, usando for...of, encontre qual é a quantidade de números ímpares presentes no Array.
+Apresente para o usuário a quantidade de números ímpares.
+    */
+   const informeNumero = Number(prompt(`informe um novo numero para a lista 15, 8, 90, 75, 102, 6, 43`));
+   
+    let lista = [15, 8, 90, 75, 102, 6, 43]
+    lista.push(informeNumero)
+    let soma = 0;
+    resultado = informeNumero % 2
+
+    for (let numero of lista) {
+        if (numero %2 == 0) {
+           alert(`seu numero é par`);
+           
+        }
+        else {
+            soma += 1
+           
+        }
+        
+    }
+     alert(`o resultado é ${soma}`)
+</script>

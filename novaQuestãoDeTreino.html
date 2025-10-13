@@ -1,0 +1,31 @@
+<script>
+    /* Você tem um array com os preços de alguns produtos em promoção: let produtos = [100.00, 250.50, 75.20, 180.00];
+     Peça ao usuário que informe qual será a porcentagem de desconto aplicada a todos os produtos (por exemplo: 10 para 10%).
+ 
+    Utilizando for...of, calcule o valor total a ser pago após aplicar o desconto em todos os produtos.
+ 
+    Ao final, mostre para o usuário:
+ 
+    O valor total original dos produtos (sem desconto)
+ 
+    O valor total com desconto aplicado*/
+
+    //primeiro passo: criar variaveis
+    const desconto = prompt("informe quantos porcento de desconto de cada produto?")
+    let produtos = [100.00, 250.50, 75.20, 180.00];
+    //segundo passo: variaveis de armazenamento
+    let totalOriginal = 0;
+    let totalComDesconto = 0;
+    //terceiro passo: for..of
+    for (let preco of produtos) {
+    totalOriginal += preco;
+    let precoComDesconto = preco - (preco * (desconto / 100));
+    totalComDesconto += precoComDesconto;
+}
+    //quarto passo: mensagem final
+    alert(`alert("Valor total original: R$ " + totalOriginal.toFixed(2) +
+      "\nValor total com desconto: R$ " + totalComDesconto.toFixed(2));
+`)
+
+//feito junto com o chatgpt
+</script>
