@@ -1,0 +1,37 @@
+<script>
+
+
+/*Crie um programa que tenha o seguinte array de números:
+[12, 77, 35, 92, 61, 48, 103]
+
+O programa deve pedir ao usuário para inserir um novo número, que será adicionado ao final da lista.
+
+Em seguida, usando for...of, o programa deve percorrer o array e calcular a soma apenas dos números ímpares que são maiores que 50.
+
+Ao final, exiba:
+
+O novo array com o número adicionado
+
+A soma total dos números ímpares maiores que 50 encontrados no array.*/
+
+    //primeiro passo: criar variaveis
+    let lista = [12, 77, 35, 92, 61, 48, 103];
+    const novoNumero = Number(prompt("adicione um novo numero a lista"));
+    lista.push(novoNumero)
+    //segundo passo: variaveis de armazenamento
+    let soma = 0
+    //terceiro passo: conta
+    resultado = novoNumero % 2
+    //quarto passo: for...of
+    for(let numero of lista){
+        if(numero %2 === 1){
+            soma += numero
+        }
+        else{
+            alert(`seu numero é par`);
+        }
+    }
+
+alert(`o total da soma é: ${soma}`);
+    
+</script>
