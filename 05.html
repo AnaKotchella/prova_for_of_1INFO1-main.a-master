@@ -7,17 +7,16 @@ Usando for...of, crie um novo array contendo apenas as cidades da lista original
 Ao final, exiba o novo array com as cidades que atenderam a condição estabelecida.
     */
    //Primeiro passo: variaveis
-   const letra = prompt("informe uma nova letra");
+   const letra = prompt("digite uma letra");
    let lista = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
-   //segundo passo: variavel de armazenamento
-   
-   let lista2 = [];
+  
     //terceiro passo: for...of
-   for(let palavra of lista){
-    if(palavra.charAt() == letra)
-    lista2.push(palavra)
-   }
-   //quarto passo: mensagem final
-   alert(`sua cidade é ${lista2}`);
+   for(let cidade of lista){
+    if(letra == cidade.charAt(0)){
 
+        lista.push(cidade);
+   }
+}
+   //quarto passo: mensagem final
+   alert(`as cidades que começam com a letra ${letra}: são ${lista}`);
 </script>

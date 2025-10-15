@@ -9,19 +9,14 @@ Apresente para o usuário a quantidade de números ímpares.
    
     let lista = [15, 8, 90, 75, 102, 6, 43]
     lista.push(informeNumero)
-    let soma = 0;
-    resultado = informeNumero % 2
+    let numerosImpares = 0
 
     for (let numero of lista) {
-        if (numero %2 == 0) {
-           alert(`seu numero é par`);
-           
-        }
-        else {
-            soma += 1
+        if (numero %2 !== 0) {
+           numerosImpares += 1
            
         }
         
     }
-     alert(`o resultado é ${soma}`)
+     alert(`o resultado é ${numerosImpares}`)
 </script>
