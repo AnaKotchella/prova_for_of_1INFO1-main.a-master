@@ -1,0 +1,16 @@
+<script>
+
+const novoNumero = Number(prompt("adicione um novo numero"));
+let lista = [15, 8, 90, 75, 102, 6, 43];
+lista.push(novoNumero);
+
+let soma = 0
+
+for(let numero of lista){
+    if(numero %2 == 0){
+        soma += numero
+    }
+}
+alert(`o total da soma de numeros pares é ${soma}`);
+
+</script>
